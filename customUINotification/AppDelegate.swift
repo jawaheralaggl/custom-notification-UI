@@ -57,6 +57,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     //MARK:- Open URL
     
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        
         let urlPath : String = url.absoluteString
         print(urlPath)
         
@@ -69,10 +70,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
             
             let initialViewController = storyboard.instantiateViewController(withIdentifier: "homepage") as! ViewController
             
-            
             self.window?.rootViewController = initialViewController
             self.window?.makeKeyAndVisible()
         }
+        
+        
         return true
     }
     

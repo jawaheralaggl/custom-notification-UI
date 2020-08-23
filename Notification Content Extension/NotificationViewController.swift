@@ -12,9 +12,7 @@ import UserNotificationsUI
 
 class NotificationViewController: UIViewController, UNNotificationContentExtension {
     
-    var window: UIWindow?
-    
-    
+        
     @IBOutlet weak var detailsButton: UIButton!
     
     override func viewDidLoad() {

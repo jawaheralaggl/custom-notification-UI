@@ -10,10 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Create "the notification's category value--its type."
         let categoryIdentifierNoti = UNNotificationCategory(identifier: "categoryIdentifierUI", actions: [], intentIdentifiers: [], options: [])
         // Register the notification type.
         UNUserNotificationCenter.current().setNotificationCategories([categoryIdentifierNoti])
@@ -45,11 +45,35 @@ class ViewController: UIViewController {
     }
     
     
+    @IBAction func goToFirstApp(_ sender: UIButton) {
+        
+        let application = UIApplication.shared
+        
+        let firstAppPath = "first://"
+        
+        let appUrl = URL(string: firstAppPath)!
+        
+        let websiteUrl = URL(string: "https://www.billeasy.in")!
+        
+        if application.canOpenURL(appUrl) {
+            
+            application.open(appUrl, options: [:], completionHandler: nil)
+            
+        }else{
+            
+            application.open(websiteUrl)
+        }
+        
+    }
+    
+    
     @IBAction func moveTo(_ sender: UIButton) {
         
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "detailsVC") as! detailsVC
         
-        self.navigationController?.pushViewController(vc, animated: true)
+        self.present(vc, animated: true, completion: nil)
+        
+        // self.navigationController?.pushViewController(vc, animated: true)
     }
     
     
