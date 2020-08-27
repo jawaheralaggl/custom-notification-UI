@@ -16,10 +16,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l8n-Sm-qlC">
-                                <rect key="frame" x="152" y="750" width="120" height="40"/>
+                                <rect key="frame" x="125" y="753" width="164" height="42"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="Aq0-Pf-ZNl"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="X4g-vR-Or0"/>
+                                    <constraint firstAttribute="width" constant="164" id="79m-tD-adT"/>
+                                    <constraint firstAttribute="height" constant="42" id="QP4-EO-7P3"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="Details Page">
@@ -29,32 +29,43 @@
                                     <action selector="moveTo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SpM-JZ-9SU"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qa1-p1-kdS">
-                                <rect key="frame" x="92" y="510" width="231" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1u1-RW-jdG">
+                                <rect key="frame" x="87.5" y="423" width="239" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Go To First App"/>
-                                <connections>
-                                    <action selector="goToFirstApp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tQq-BR-pR8"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1u1-RW-jdG">
-                                <rect key="frame" x="92" y="441" width="231" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="81Z-Wj-G0w"/>
+                                    <constraint firstAttribute="width" constant="239" id="WOx-gp-MQC"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Set Notification"/>
                                 <connections>
                                     <action selector="setNotification:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bWg-tP-oqY"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qa1-p1-kdS">
+                                <rect key="frame" x="88" y="510" width="239" height="48"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="239" id="29O-LT-8ze"/>
+                                    <constraint firstAttribute="height" constant="48" id="Nop-Nw-yGN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Go To First App"/>
+                                <connections>
+                                    <action selector="goToFirstApp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tQq-BR-pR8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.56426197290000002" green="0.50974541900000003" blue="0.83275789020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="l8n-Sm-qlC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="152" id="NiO-2Z-73a"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="l8n-Sm-qlC" secondAttribute="bottom" constant="72" id="tGe-CN-fA0"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="l8n-Sm-qlC" secondAttribute="trailing" constant="142" id="xK1-nU-Wqp"/>
+                            <constraint firstItem="l8n-Sm-qlC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="125" id="9aZ-ut-Z4A"/>
+                            <constraint firstItem="Qa1-p1-kdS" firstAttribute="top" secondItem="1u1-RW-jdG" secondAttribute="bottom" constant="37" id="F7a-tu-2CN"/>
+                            <constraint firstItem="1u1-RW-jdG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Nsd-2L-ZE1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="l8n-Sm-qlC" secondAttribute="bottom" constant="67" id="VJd-qR-t4N"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Qa1-p1-kdS" secondAttribute="trailing" constant="87" id="WvJ-qB-vD9"/>
+                            <constraint firstItem="Qa1-p1-kdS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="88" id="bmo-u6-Rpg"/>
+                            <constraint firstItem="1u1-RW-jdG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ccw-bF-GKj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="l8n-Sm-qlC" secondAttribute="trailing" constant="125" id="wtr-EK-ekL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

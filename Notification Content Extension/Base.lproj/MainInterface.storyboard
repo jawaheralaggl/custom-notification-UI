@@ -28,8 +28,8 @@
                                     <constraint firstAttribute="height" constant="54" id="Lak-oi-tVs"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="127" id="MXn-FN-pke"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <state key="normal" title="See Details"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Go To Test App"/>
                                 <connections>
                                     <action selector="detailsButtonTapped:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="pej-WP-tMW"/>
                                 </connections>

@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         let center = UNUserNotificationCenter.current()
         let content = UNMutableNotificationContent()
         content.title = "This is a notification"
-        content.body = "Want to know the details? "
+        content.body = "Want to check the test App? "
         content.sound = .default
         
         content.categoryIdentifier = "categoryIdentifierUI"
@@ -53,7 +53,7 @@ class ViewController: UIViewController {
         
         let appUrl = URL(string: firstAppPath)!
         
-        let websiteUrl = URL(string: "https://www.billeasy.in")!
+        let websiteUrl = URL(string: "http://appstore.com/apple")!
         
         if application.canOpenURL(appUrl) {
             
@@ -73,7 +73,6 @@ class ViewController: UIViewController {
         
         self.present(vc, animated: true, completion: nil)
         
-        // self.navigationController?.pushViewController(vc, animated: true)
     }
     
     

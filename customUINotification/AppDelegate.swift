@@ -54,29 +54,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     }
     
     
-    //MARK:- Open URL
-    
-    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
-        
-        let urlPath : String = url.absoluteString
-        print(urlPath)
-        
-        if urlPath.contains("mainapp://recent"){
-            
-            // take us to home page (first View Controller)
-            self.window = UIWindow(frame: UIScreen.main.bounds)
-            
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            
-            let initialViewController = storyboard.instantiateViewController(withIdentifier: "homepage") as! ViewController
-            
-            self.window?.rootViewController = initialViewController
-            self.window?.makeKeyAndVisible()
-        }
-        
-        
-        return true
-    }
-    
     
 }

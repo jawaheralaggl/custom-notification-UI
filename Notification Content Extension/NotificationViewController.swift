@@ -12,7 +12,7 @@ import UserNotificationsUI
 
 class NotificationViewController: UIViewController, UNNotificationContentExtension {
     
-        
+    
     @IBOutlet weak var detailsButton: UIButton!
     
     override func viewDidLoad() {
@@ -29,11 +29,25 @@ class NotificationViewController: UIViewController, UNNotificationContentExtensi
     @IBAction func detailsButtonTapped(_ sender: Any) {
         print("[Details] button tapped")
         
-        if let url = URL(string: "mainapp://recent") {
-            extensionContext?.open(url, completionHandler: nil)
+        let url = "testApp://"
+        let appUrl = URL(string: url)!
+        
+        let websiteUrl = "http://appstore.com/apple"
+        let appStoreURL = URL(string: websiteUrl)!
+        
+        if canOpenURL(appUrl) {
+            extensionContext?.open(appUrl, completionHandler: nil)
         }
         
-        //self.extensionContext?.open(URL(string: "mainapp://detailsVC")! , completionHandler: nil)
+        if canOpenURL(appStoreURL) {
+            extensionContext?.open(appStoreURL, completionHandler: nil)
+        }
+        
+    }
+    
+    func canOpenURL(_ url: URL) -> Bool {
+        return true
     }
     
 }
+
